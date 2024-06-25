@@ -1,0 +1,209 @@
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     lung_cancer-weka.filters.unsupervised.attribute.Remove-R1-2
+Instances:    1000
+Attributes:   24
+              Age
+              Gender
+              Air Pollution
+              Alcohol use
+              Dust Allergy
+              OccuPational Hazards
+              Genetic Risk
+              chronic Lung Disease
+              Balanced Diet
+              Obesity
+              Smoking
+              Passive Smoker
+              Chest Pain
+              Coughing of Blood
+              Fatigue
+              Weight Loss
+              Shortness of Breath
+              Wheezing
+              Swallowing Difficulty
+              Clubbing of Finger Nails
+              Frequent Cold
+              Dry Cough
+              Snoring
+              Level
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                             Class
+Attribute                      Low  Medium    High
+                             (0.3)  (0.33)  (0.36)
+===================================================
+Age
+  mean                      35.4739 38.5951 37.2485
+  std. dev.                 11.9559 12.9439 10.6148
+  weight sum                    303     332     365
+  precision                  1.5128  1.5128  1.5128
+
+Gender
+  mean                       1.5083  1.4066  1.3096
+  std. dev.                  0.4999  0.4912  0.4623
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Air Pollution
+  mean                       2.6007  2.9337  5.6932
+  std. dev.                   1.109  1.8713  1.2732
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Alcohol use
+  mean                        2.231  4.1988  6.8301
+  std. dev.                  1.2584  2.6463  1.1557
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Dust Allergy
+  mean                       3.1122  5.4428  6.6164
+  std. dev.                  1.6573  1.4623  0.9161
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+OccuPational Hazards
+  mean                            3  4.7169  6.4795
+  std. dev.                  1.5221  2.0339  0.9808
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Genetic Risk
+  mean                       2.7327  4.2922  6.3753
+  std. dev.                  1.4297  2.0657  0.8203
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+chronic Lung Disease
+  mean                       3.0924  3.9639  5.8274
+  std. dev.                  1.6939  1.6034  1.0015
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Balanced Diet
+  mean                            3   3.512  6.6192
+  std. dev.                  1.5649  1.7553  0.6326
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Obesity
+  mean                       2.4092  3.9036  6.6822
+  std. dev.                  1.0519  1.3763  1.0029
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Smoking
+  mean                       3.0231  2.4548   6.074
+  std. dev.                  1.7752  1.6668  2.1562
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Passive Smoker
+  mean                       2.6337  3.0542  6.5288
+  std. dev.                  1.3501  1.2037  1.7727
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Chest Pain
+  mean                        2.835   3.753  6.3918
+  std. dev.                  1.8201  1.7714  1.4997
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Coughing of Blood
+  mean                       2.8614  3.8464  7.4384
+  std. dev.                  1.6849  1.3253  1.1322
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Fatigue
+  mean                       2.4818  3.7453   5.708
+  std. dev.                  1.0236  1.3835  2.2573
+  weight sum                    303     332     365
+  precision                  1.1429  1.1429  1.1429
+
+Weight Loss
+  mean                       2.5017  4.4157  4.4685
+  std. dev.                  1.6021  2.2446  2.1047
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Shortness of Breath
+  mean                       2.7421  4.6024  5.4137
+  std. dev.                  1.3969  1.7458  2.1624
+  weight sum                    303     332     365
+  precision                  1.1429  1.1429  1.1429
+
+Wheezing
+  mean                       2.5743   4.756  3.8849
+  std. dev.                  1.0246  1.3679  2.5988
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Swallowing Difficulty
+  mean                       2.7591  4.1596   4.189
+  std. dev.                  1.6425  2.3964   2.342
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Clubbing of Finger Nails
+  mean                       2.4686  4.9367  4.2082
+  std. dev.                  1.1822  2.8831  2.0287
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Frequent Cold
+  mean                       2.3663  3.6747  4.3808
+  std. dev.                  1.0753  1.9161  1.7392
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Dry Cough
+  mean                       2.9142  3.6958  4.7753
+  std. dev.                  1.4508  1.8155  2.2425
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+Snoring
+  mean                       2.1419  3.3102  3.2274
+  std. dev.                  1.0259  1.5259  1.4916
+  weight sum                    303     332     365
+  precision                       1       1       1
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         890               89      %
+Incorrectly Classified Instances       110               11      %
+Kappa statistic                          0.8339
+Mean absolute error                      0.0754
+Root mean squared error                  0.263 
+Relative absolute error                 17.0032 %
+Root relative squared error             55.8691 %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.901     0          1         0.901     0.948      0.983    Low
+                 0.819     0.06       0.872     0.819     0.845      0.961    Medium
+                 0.945     0.11       0.831     0.945     0.885      0.994    High
+Weighted Avg.    0.89      0.06       0.896     0.89      0.891      0.98 
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 273  20  10 |   a = Low
+   0 272  60 |   b = Medium
+   0  20 345 |   c = High
+

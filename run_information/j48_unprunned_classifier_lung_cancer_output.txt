@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -U -M 2
+Relation:     lung_cancer-weka.filters.unsupervised.attribute.Remove-R1-2
+Instances:    1000
+Attributes:   24
+              Age
+              Gender
+              Air Pollution
+              Alcohol use
+              Dust Allergy
+              OccuPational Hazards
+              Genetic Risk
+              chronic Lung Disease
+              Balanced Diet
+              Obesity
+              Smoking
+              Passive Smoker
+              Chest Pain
+              Coughing of Blood
+              Fatigue
+              Weight Loss
+              Shortness of Breath
+              Wheezing
+              Swallowing Difficulty
+              Clubbing of Finger Nails
+              Frequent Cold
+              Dry Cough
+              Snoring
+              Level
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 unpruned tree
+------------------
+
+Passive Smoker <= 6
+|   Fatigue <= 6
+|   |   Wheezing <= 4
+|   |   |   Obesity <= 4
+|   |   |   |   Snoring <= 4: Low (303.0)
+|   |   |   |   Snoring > 4: Medium (41.0)
+|   |   |   Obesity > 4: Medium (70.0)
+|   |   Wheezing > 4: Medium (221.0)
+|   Fatigue > 6: High (70.0)
+Passive Smoker > 6: High (295.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1000              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        Low
+                 1         0          1         1         1          1        Medium
+                 1         0          1         1         1          1        High
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 303   0   0 |   a = Low
+   0 332   0 |   b = Medium
+   0   0 365 |   c = High
+

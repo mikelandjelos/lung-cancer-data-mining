@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.ZeroR 
+Relation:     lung_cancer-weka.filters.unsupervised.attribute.Remove-R1-2
+Instances:    1000
+Attributes:   24
+              Age
+              Gender
+              Air Pollution
+              Alcohol use
+              Dust Allergy
+              OccuPational Hazards
+              Genetic Risk
+              chronic Lung Disease
+              Balanced Diet
+              Obesity
+              Smoking
+              Passive Smoker
+              Chest Pain
+              Coughing of Blood
+              Fatigue
+              Weight Loss
+              Shortness of Breath
+              Wheezing
+              Swallowing Difficulty
+              Clubbing of Finger Nails
+              Frequent Cold
+              Dry Cough
+              Snoring
+              Level
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: High
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         365               36.5    %
+Incorrectly Classified Instances       635               63.5    %
+Kappa statistic                          0     
+Mean absolute error                      0.4432
+Root mean squared error                  0.4707
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0         0          0         0         0          0.495    Low
+                 0         0          0         0         0          0.496    Medium
+                 1         1          0.365     1         0.535      0.495    High
+Weighted Avg.    0.365     0.365      0.133     0.365     0.195      0.495
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+   0   0 303 |   a = Low
+   0   0 332 |   b = Medium
+   0   0 365 |   c = High
+

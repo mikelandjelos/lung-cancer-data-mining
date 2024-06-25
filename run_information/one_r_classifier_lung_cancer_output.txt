@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:weka.classifiers.rules.OneR -B 6
+Relation:     lung_cancer-weka.filters.unsupervised.attribute.Remove-R1-2
+Instances:    1000
+Attributes:   24
+              Age
+              Gender
+              Air Pollution
+              Alcohol use
+              Dust Allergy
+              OccuPational Hazards
+              Genetic Risk
+              chronic Lung Disease
+              Balanced Diet
+              Obesity
+              Smoking
+              Passive Smoker
+              Chest Pain
+              Coughing of Blood
+              Fatigue
+              Weight Loss
+              Shortness of Breath
+              Wheezing
+              Swallowing Difficulty
+              Clubbing of Finger Nails
+              Frequent Cold
+              Dry Cough
+              Snoring
+              Level
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Coughing of Blood:
+	< 2.5	-> Low
+	< 5.5	-> Medium
+	>= 5.5	-> High
+(779/1000 instances correct)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         779               77.9    %
+Incorrectly Classified Instances       221               22.1    %
+Kappa statistic                          0.6651
+Mean absolute error                      0.1473
+Root mean squared error                  0.3838
+Relative absolute error                 33.2453 %
+Root relative squared error             81.5417 %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.535     0.043      0.844     0.535     0.655      0.746    Low
+                 0.789     0.196      0.667     0.789     0.723      0.797    Medium
+                 0.973     0.094      0.855     0.973     0.91       0.939    High
+Weighted Avg.    0.779     0.113      0.789     0.779     0.771      0.833
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 162 121  20 |   a = Low
+  30 262  40 |   b = Medium
+   0  10 355 |   c = High
+

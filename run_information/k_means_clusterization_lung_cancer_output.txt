@@ -1,0 +1,99 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 3 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     lung_cancer-weka.filters.unsupervised.attribute.Remove-R1-2
+Instances:    1000
+Attributes:   24
+              Age
+              Gender
+              Air Pollution
+              Alcohol use
+              Dust Allergy
+              OccuPational Hazards
+              Genetic Risk
+              chronic Lung Disease
+              Balanced Diet
+              Obesity
+              Smoking
+              Passive Smoker
+              Chest Pain
+              Coughing of Blood
+              Fatigue
+              Weight Loss
+              Shortness of Breath
+              Wheezing
+              Swallowing Difficulty
+              Clubbing of Finger Nails
+              Frequent Cold
+              Dry Cough
+              Snoring
+Ignored:
+              Level
+Test mode:Classes to clusters evaluation on training data 
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 1308.741096262428
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                        Cluster#
+Attribute                   Full Data          0          1          2
+                               (1000)      (475)      (385)      (140)
+======================================================================
+Age                            37.174    35.7095    36.9403    42.7857
+Gender                          1.402     1.5179     1.2571     1.4071
+Air Pollution                    3.84     2.2779     5.2416     5.2857
+Alcohol use                     4.563     2.1684      6.813        6.5
+Dust Allergy                    5.165     3.5368     6.6883        6.5
+OccuPational Hazards             4.84     2.9158     6.7922          6
+Genetic Risk                     4.58     2.5326     6.5896          6
+chronic Lung Disease             4.38     2.7853     6.1221          5
+Balanced Diet                   4.491     2.8947      6.639          4
+Obesity                         4.465     2.6863     6.2831        5.5
+Smoking                         3.948     2.6126     6.4857        1.5
+Passive Smoker                  4.195     2.6989     6.6571        2.5
+Chest Pain                      4.438     2.5579     6.9169          4
+Coughing of Blood               4.859     2.9347          7        5.5
+Fatigue                         3.856     2.9389     4.5714          5
+Weight Loss                     3.855     3.1663      3.561          7
+Shortness of Breath              4.24     3.1053     4.4545        7.5
+Wheezing                        3.777     3.6611     4.0208        3.5
+Swallowing Difficulty           3.746     4.0568      4.361          1
+Clubbing of Finger Nails        3.923     3.0884     4.0156        6.5
+Frequent Cold                   3.536     3.2568     3.5299        4.5
+Dry Cough                       3.853     3.2421     4.0078        5.5
+Snoring                         2.926     2.9642     3.2156          2
+
+
+
+
+Time taken to build model (full training data) : 0.01 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      475 ( 48%)
+1      385 ( 39%)
+2      140 ( 14%)
+
+
+Class attribute: Level
+Classes to Clusters:
+
+   0   1   2  <-- assigned to cluster
+ 283  20   0 | Low
+ 192  70  70 | Medium
+   0 295  70 | High
+
+Cluster 0 <-- Low
+Cluster 1 <-- High
+Cluster 2 <-- Medium
+
+Incorrectly clustered instances :	352.0	 35.2    %
+
